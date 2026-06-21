@@ -10,8 +10,8 @@
     /* Cinza para metadados e subtítulos */
     --cor-azul-tech: #0066ff;
     /* O azul dos bullets indicadores */
-    --fonte-principal: 'Inter', sans-serif;
-    --fonte-tech: 'Orbitron', sans-serif;
+    --fonte-principal: "Inter", sans-serif;
+    --fonte-tech: "Orbitron", sans-serif;
 }
 
 * {
@@ -256,7 +256,9 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(to top, rgba(10, 10, 10, 0.9) 20%, rgba(10, 10, 10, 0.2));
+    background: linear-gradient(to top,
+            rgba(10, 10, 10, 0.9) 20%,
+            rgba(10, 10, 10, 0.2));
     z-index: 2;
 }
 
@@ -441,118 +443,117 @@ body {
     }
 }
 
-
- /* ==========================================================================
+/* ==========================================================================
    ESTILOS ADICIONAIS PARA A PÁGINA SOBRE (Grelha Assimétrica)
    ========================================================================== */
- .sobre-grid-container {
-     padding: 160px 50px 80px 50px;
-     display: grid;
-     grid-template-columns: 4fr 6fr;
-     /* Foto ocupa 40% e texto ocupa 60% */
-     gap: 80px;
-     align-items: start;
- }
+.sobre-grid-container {
+    padding: 160px 50px 80px 50px;
+    display: grid;
+    grid-template-columns: 4fr 6fr;
+    /* Foto ocupa 40% e texto ocupa 60% */
+    gap: 80px;
+    align-items: start;
+}
 
- .sobre-media-box {
-     position: relative;
-     width: 100%;
-     height: 65vh;
-     border: 1px solid #222;
-     overflow: hidden;
- }
+.sobre-media-box {
+    position: relative;
+    width: 100%;
+    height: 65vh;
+    border: 1px solid #222;
+    overflow: hidden;
+}
 
- .sobre-perfil-img {
-     width: 100%;
-     height: 100%;
-     object-fit: cover;
-     filter: grayscale(100%) contrast(110%);
-     transition: transform 0.5s ease;
- }
+.sobre-perfil-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: grayscale(100%) contrast(110%);
+    transition: transform 0.5s ease;
+}
 
- .sobre-media-box:hover .sobre-perfil-img {
-     transform: scale(1.02);
- }
+.sobre-media-box:hover .sobre-perfil-img {
+    transform: scale(1.02);
+}
 
- .sobre-img-overlay {
-     position: absolute;
-     top: 0;
-     left: 0;
-     width: 100%;
-     height: 100%;
-     background: linear-gradient(to top, rgba(10, 10, 10, 0.5), transparent);
- }
+.sobre-img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(10, 10, 10, 0.5), transparent);
+}
 
- .sobre-title {
-     font-size: 3.5rem;
-     font-weight: 900;
-     margin-top: 10px;
-     margin-bottom: 30px;
-     line-height: 1;
- }
+.sobre-title {
+    font-size: 3.5rem;
+    font-weight: 900;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    line-height: 1;
+}
 
- .sobre-bio {
-     color: var(--cor-secundaria);
-     font-size: 1.1rem;
-     line-height: 1.7;
-     margin-bottom: 40px;
-     text-align: justify;
- }
+.sobre-bio {
+    color: var(--cor-secundaria);
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 40px;
+    text-align: justify;
+}
 
- /* Painéis de Informação Suspensa */
- .sobre-paineis-suspensos {
-     display: flex;
-     flex-direction: column;
-     gap: 20px;
- }
+/* Painéis de Informação Suspensa */
+.sobre-paineis-suspensos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
- .painel-item {
-     border-left: 2px solid var(--cor-azul-tech);
-     padding-left: 20px;
-     padding-top: 5px;
-     padding-bottom: 5px;
-     background: linear-gradient(to right, rgba(0, 102, 255, 0.02), transparent);
-     transition: background 0.3s ease;
- }
+.painel-item {
+    border-left: 2px solid var(--cor-azul-tech);
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: linear-gradient(to right, rgba(0, 102, 255, 0.02), transparent);
+    transition: background 0.3s ease;
+}
 
- .painel-item:hover {
-     background: linear-gradient(to right, rgba(0, 102, 255, 0.05), transparent);
- }
+.painel-item:hover {
+    background: linear-gradient(to right, rgba(0, 102, 255, 0.05), transparent);
+}
 
- .painel-tag {
-     display: block;
-     font-size: 10px;
-     color: var(--cor-azul-tech);
-     margin-bottom: 5px;
- }
+.painel-tag {
+    display: block;
+    font-size: 10px;
+    color: var(--cor-azul-tech);
+    margin-bottom: 5px;
+}
 
- .painel-dado {
-     display: block;
-     font-size: 1.1rem;
-     font-weight: 600;
-     color: var(--cor-texto);
- }
+.painel-dado {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--cor-texto);
+}
 
- .painel-sub {
-     display: block;
-     font-size: 12px;
-     color: var(--cor-secundaria);
-     margin-top: 2px;
- }
+.painel-sub {
+    display: block;
+    font-size: 12px;
+    color: var(--cor-secundaria);
+    margin-top: 2px;
+}
 
- /* Responsividade da Página Sobre */
- @media (max-width: 900px) {
-     .sobre-grid-container {
-         grid-template-columns: 1fr;
-         padding-top: 120px;
-         gap: 40px;
-     }
+/* Responsividade da Página Sobre */
+@media (max-width: 900px) {
+    .sobre-grid-container {
+        grid-template-columns: 1fr;
+        padding-top: 120px;
+        gap: 40px;
+    }
 
-     .sobre-media-box {
-         height: 45vh;
-     }
+    .sobre-media-box {
+        height: 45vh;
+    }
 
-     .sobre-title {
-         font-size: 2.5rem;
-     }
- }
+    .sobre-title {
+        font-size: 2.5rem;
+    }
+}
