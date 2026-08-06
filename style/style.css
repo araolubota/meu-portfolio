@@ -124,7 +124,7 @@ body {
     /* Fundo ligeiramente mais claro que o corpo */
     border-top: 1px solid #222222;
     border-bottom: 1px solid #222222;
-    padding: 20px 0;
+    padding: 10px 0;
     overflow: hidden;
     display: flex;
     width: 100vw;
@@ -137,7 +137,7 @@ body {
     padding-left: 50px;
     animation: moverCarrossel 25s linear infinite;
     /* Animação contínua */
-    font-size: 1.5rem;
+    font-size: 1.rem;
     font-weight: 700;
     color: var(--cor-texto);
 }
